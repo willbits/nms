@@ -1,0 +1,166 @@
+.bio{
+
+	width:100%;
+	height: 50%;
+	padding-top: 1%;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+.bio .equipo{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	height: 90%;
+}
+
+.bio img{
+	width: 100%;
+	height: 100%;
+
+}
+
+.abrir{
+	height: 100%;
+	margin-bottom: 1%;
+}
+
+
+
+.nombre{
+	width: 100%;
+	height: 20%;
+	background-color: #fff;
+	padding: 2%;
+
+	font-family: 'Bank Gothic Light BT';
+	border: none;
+	transition: background .5s;
+}
+
+.nombre:hover{
+	background: rgba(122,122,122,0.8);
+	color: #fff;
+	transition: background .5s;
+}
+
+.img{
+	width: 100%;
+	height: 100%;
+}
+
+.director{
+	position: absolute;
+	width: 80%;
+	height: 60%;
+	background-color: rgba( 177, 177, 177, 0.5 );
+	
+	margin-right: auto;
+	margin-left: auto;
+	top: 15%;
+
+
+	overflow: hidden;
+	-webkit-transform:scale(0);
+  	transition: .3s ease;
+
+}
+
+.img:hover .director{
+	transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: -50%!important;
+  left: 50%;
+  
+  text-align: center;
+}
+
+@media screen and (max-width: 500px){
+	.texto{
+		height: 100%!important;
+		padding-bottom: 20%!important;
+	}
+}
+.texto{
+	margin-top: -19.5%;
+	position: absolute;
+	
+	width: 72%;
+	height: 12em;
+	background-color: #fff;
+	padding: 5%;
+	z-index: 3;
+	font-family: 'Bank Gothic Light BT';
+}
+
+.texto_eo{
+	width: 100%;
+	height: 12em;
+	background-color: #fff;
+	padding: 5%;
+	font-family: Calibri;
+}
+
+.texto img{
+	width: 15px;
+	height: 15px;
+}
+
+.ocultar{
+	display: none!important;
+
+}
+
+.visible{
+	display: block!important;
+	animation: aparecer 0.5s;
+}
+
+@keyframes aparecer{
+	from{
+		opacity: 0;
+	}
+	to{
+		
+		opacity: 1;
+	}
+	
+}
+
+.modificar{
+	width: 80%;
+	height: 80%;
+	background-color: #fff;
+	margin: auto;
+	padding: 10%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.modificar form{
+	font-family: 'Bank Gothic Light BT';
+}
+
+#busqueda input{
+	display: block;
+}
+
+#busqueda #ingresar{
+	width: 100%;
+	height: 3em;
+}
+#busqueda #biografia{
+	width: 100%;
+	height: 10em;
+}
+
+
+
+
+
+

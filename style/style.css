@@ -1,0 +1,386 @@
+@import url(style_social.css);
+@import url(style_team.css);
+@import url(style_bio.css);
+@import url(style_news.css);
+@import url(style_language.css);
+@import url(style_menu.css);
+@import url(style_section.css);
+
+@font-face {
+font-family: 'Bank Gothic Light BT';
+font-style: normal;
+font-weight: normal;
+src: local('Bank Gothic Light BT'), url('TT0589M_.woff') format('woff');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 850px){
+	.menu a{
+		font-size: 0.6em!important;
+	}
+
+	.left{
+
+		left: 15%!important;
+		transform:translate(0%,-120%);
+	-ms-transform:translate(0%,-120%);
+
+	}
+	.right{
+
+		right: 15%!important;
+		transform:translate(0%,-120%);
+	-ms-transform:translate(0%,-120%);
+
+	}
+
+	#nms{
+		height: 5em!important;
+	}
+}
+
+@media screen and (max-width: 500px){
+
+	#nms{
+		display: block;
+		margin-right: 7em;
+	}
+
+	#nms img{
+		
+		width: 333%!important;
+		height: 333%!important;
+
+	}
+
+	.menu{
+		font-size: 1em!important;
+	}
+	
+	.menu a div{
+		width: 100%;
+	}
+	.menu a{
+		display: block;
+		width: 100%;
+		
+	}
+	
+
+
+	.slide{
+		margin-top: 10%!important;
+	}
+
+	.slide img{
+		width: 100%!important;
+		
+	}
+
+	
+
+	.informacion{
+		display: table;
+		float: none;
+		width: 100%;
+	}
+
+	
+
+	#map{
+		display: block;
+		float: none;
+		width: 100%;
+	}
+}
+
+
+
+body{
+	background-color: #000;
+	background-attachment: fixed;
+}
+
+.slide{
+
+	width: 100%;
+	height: 50%;
+	margin-top: 3%;
+
+}
+@keyframes fading{
+	0%{
+		opacity:0
+	}
+	50%{
+		opacity:1
+	}
+	100%{
+		opacity:0
+		}
+}
+
+@keyframes animatetop{
+	from{
+		top:-300px;
+		opacity:0;
+	} 
+	to{
+		top:0;
+		opacity:1;
+	}
+}
+
+@keyframes animatetop1{
+	from{
+		top:-100%;
+		
+	} 
+	to{
+		top:0;
+		
+	}
+}
+
+.slide img{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 65%;
+	height: 40%;
+	animation: fading 10s infinite;
+}
+
+@media only screen and (max-width:500px) {
+	.button{
+		background-color: rgba( 178, 176, 179, 0.05 )!important;
+	}
+
+	.left{
+
+		left: 5%!important;
+		transform:translate(0%,-120%);
+	-ms-transform:translate(0%,-120%);
+
+	}
+	.right{
+
+		right: 5%!important;
+		transform:translate(0%,-120%);
+	-ms-transform:translate(0%,-120%);
+
+	}
+	
+}
+
+
+.button{
+	border:none;
+	display:inline-block;
+	padding:3em 1em;
+	vertical-align:middle;
+	text-decoration:none;
+	background-color: rgba( 178, 176, 179, 0.2 );
+
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap;
+	transition: background 0.5s;
+}
+
+.button:hover{
+	background-color: rgb( 178, 176, 179 );
+	transition: background 0.5s;
+}
+
+.left{
+	position:absolute;
+	top:15em;
+	left: 17%;
+
+}
+.right{
+	position:absolute;
+	top: 15em;
+	right: 17%;
+
+}
+
+
+
+.bajar{
+	width: 100%;
+	height: 10%;
+	margin-top: 10%;
+
+}
+
+.bajar button{
+	background-color: rgba( 154, 131, 96, 0.5 );
+	width: 20%;
+	height: 2em;
+	border: none;
+}
+
+.poster{
+	width: 100%;
+	height: 40em;
+	margin-left: auto;
+	margin-right: auto;
+
+} 
+
+
+#nms{
+	width: 12%!important;
+	height: 12%!important;
+	padding-bottom: 2%;
+	
+}
+
+
+
+.menu{
+	margin-top: -2%;
+	width: 100%;
+
+	
+}
+
+
+.menu .principal div{
+	display: inline-block;
+	width: 14em;
+	font-size: 0.9em;
+	color: #fff;
+	font-family: 'Bank Gothic Light BT';
+	background-color: rgba(0,0,0,0.8);
+	height: 3.5em;
+	padding-top: 1.3%;
+	border-color: #fff;
+	border: solid 1px;
+	border-radius: 5px 0 5px 0;
+	transition: background .5s;
+
+	
+
+}
+
+.menu .principal div:hover{
+	background: #fff;
+ 	color: #000;
+  	cursor: pointer; 
+  	transition: background .5s;
+}
+
+#nms{
+	display: inline-block;
+	width: 15%;
+	
+	
+
+}
+
+
+
+footer{
+	padding-bottom: 2%;
+}
+
+
+
+.session{
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(0,0,0,0.6);
+	overflow: auto;
+	padding-top: 100px;
+	z-index:100;
+	font-family: 'Bank Gothic Light BT';
+}
+
+.session1{
+	margin:auto;
+	background-color:#fff;
+	position:relative;
+	padding:0;
+	outline:0;
+	width: 50%;
+	height: 60%;
+
+}
+
+
+
+.ini_session{
+	width: 50%;
+	height: 3em;
+	background-color: #fff;
+}
+
+.animate-top{
+	position:relative;
+	animation:animatetop 0.4s;
+}
+
+.form{
+	padding: 5%;
+}
+
+.section{
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 3em;
+}
+
+.section .entrada{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 3em;
+	font-size: 1.2em;
+
+}
+
+.section button{
+	width: 80%;
+	height: 2em;
+	border: none;
+	background-color: rgb(125, 125, 125);
+	transition: background .3s;
+}
+
+.section button:hover{
+	background-color: #000;
+	color: #fff;
+	transition: background .3s;
+}
+
+.copr{
+	width: 100%;
+	height: 30%;
+	padding: 10%;
+	
+	display: table;
+
+}
+
+.copr1{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 50%;
+	color: #fff;
+	font-family: 'Bank Gothic Light BT';
+}

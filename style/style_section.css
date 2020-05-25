@@ -1,0 +1,124 @@
+.seccion_mod{
+	padding: 5%;
+	width: 100%;
+	height: 26em;
+	background-color: #fff;
+	color: #000;
+}
+
+.seccion{
+	padding: 5%;
+	width: 100%;
+	height: 26em;
+}
+
+.seccion_mod video{
+	width: 480px;
+	height: 320px;
+	margin-right: 5%
+}
+
+.seccion_mod .img{
+	width: 80%;
+	height: 100%;
+}
+.seccion video{
+	width: 480px;
+	height: 320px;
+	margin-right: 5%
+}
+
+.seccion .img{
+	
+	width: 80%;
+	height: 100%;
+}
+
+@media screen and (max-width: 1000px){
+	.seccion_derecha{
+		float: none!important;
+		display: block!important;
+		width: 100%!important;
+	}
+
+	.seccion_izquierda{
+		float: none!important;
+		display: block!important;
+		width: 100%!important;
+	
+	}
+
+	.seccion video{
+		width: 280px!important;
+		height: 240px!important;
+		
+	}
+
+	.seccion{
+
+		height: 100%!important;
+	}
+
+	.linea_d{
+		height: 1px;
+		width: 80%;
+		background-color: #fff;
+		margin-right: auto;
+	}
+	.linea_i{
+		height: 1px;
+		width: 80%;
+		background-color: #fff;
+		margin-left: auto;
+	}
+}
+
+.seccion_izquierda{
+	float: left;
+	margin-bottom: auto!important;
+	margin-top: auto!important;
+	width: 50%;
+	height: 100%
+}
+
+.seccion_derecha{
+	float: right;
+	
+	width: 50%;
+	height: 100%;
+	
+}
+
+.seccion_descripcion{
+	width: 100%;
+	height: 100%;
+	padding: 10%;
+	color: #fff;
+	font-family: 'Bank Gothic Light BT';
+}
+
+.seccion_descripcion_mod{
+	width: 100%;
+	height: 100%;
+	padding: 10%;
+	color: #000;
+	font-family: 'Bank Gothic Light BT';
+}
+
+.seccion_vacia{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	height: 30em;
+	background-color: #fff;
+	padding: 15%;
+	margin-top: 2%;
+	font-family: 'Bank Gothic Light BT';
+}
+
+.editar_sect{
+	width: 40%;
+	height: 20%;
+	background-color: #fff;
+	padding: 5%;
+}

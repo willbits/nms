@@ -1,0 +1,95 @@
+.nms{
+	width: 100%;
+	height: 50%;
+	padding: 5%;
+}
+
+.nms_1{
+	width: 100%;
+	height: 50em;
+	/*background-color: #999;*/
+}
+
+
+@keyframes derecha{
+	from{
+		transform:translate(100%,0%);
+		-ms-transform:translate(100%,0%);
+		opacity: 0;
+	}
+	to{
+		transform:translate(0%,0%);
+		-ms-transform:translate(0%,0%);
+		opacity: 1;
+	}
+	
+}
+
+@keyframes derecha_a{
+	from{
+		transform:translate(0%,0%);
+		-ms-transform:translate(0%,0%);
+		opacity: 0;
+	}
+	to{
+		transform:translate(0%,0%);
+		-ms-transform:translate(0%,0%);
+		opacity: 1;
+	}
+	
+}
+
+
+@media screen and (max-width: 600px){
+	.nms_bio{
+		float: none;
+		display: table!important;
+		width: 100%!important;
+		
+		
+
+	}
+
+	.nms_img{
+		float: none;
+		display: none;
+	}
+
+
+	.bio_img{
+		display: block!important;
+		width: 100%;
+	}
+	.bio_img img{
+		width: 94%;
+		height: 100%;
+	}
+}
+
+.nms_bio{
+	float: left;
+	width: 50%;
+	height: 100%;
+	padding: 8%;
+	background-color: #fff;
+	font-family: 'Bank Gothic Light BT';
+	animation: izquierda 1s;
+}
+
+.bio_img{
+	display: none;
+}
+
+.nms_img{
+	float: right;
+	width: 50%;
+	height: 50%;
+	padding-left: 3%;
+	animation: derecha 1s;
+}
+
+.nms_img img{
+	width: 100%;
+	height: 100%;
+	margin-top: 35%;
+}
